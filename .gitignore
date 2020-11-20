@@ -1,5 +1,6 @@
 *.terraform
 *.pem
+*.ppk
 *.tfvars
 *.tfplan
 *.tfstate
