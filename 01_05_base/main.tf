@@ -9,6 +9,10 @@ variable "ssh_key_name" {}
 
 variable "private_key_path" {}
 
+variable "aws_session_token" {
+  
+}
+
 variable "region" {
   default = "us-east-1"
 }
@@ -27,6 +31,7 @@ variable "subnet1_cidr" {
 provider "aws" {
   access_key = var.aws_access_key
   secret_key = var.aws_secret_key
+  token = var.aws_session_token
   region     = var.region
 }
 
